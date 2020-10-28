@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "firstname": "Chinwe",
+    "lastname": "Obi",
+    "role": "Accountant",
+    "email": "chinweobi@gmail.com",
+    "phone": "313-222-2222"
+  },
+
+  {
+    "id": 2,
+    "firstname": "Ezinne",
+    "lastname": "Madukwe",
+    "role": "Tech Engineer",
+    "email": "ezimadu@gmail.com",
+    "phone": "313-222-2221"
+  },
+
+  {
+    "id": 3,
+    "firstname": "Ebubechukwu",
+    "lastname": "Anderson",
+    "role": "Sales Specialist",
+    "email": "aebube@gmailcom",
+    "phone": "313-222-2223"
+  },
+
+  {
+    "id": 4,
+    "firstname": "Chinomso",
+    "lastname": "Uwaeze",
+    "role": "Marketing",
+    "email": "uwaezec@gmail.com",
+    "phone": "313-222-2224"
+  },
+
+  {
+    "id": 5,
+    "firstname": "Charles",
+    "lastname": "Okeke",
+    "role": "Developer",
+    "email": "charles.okeke@gmail.com",
+    "phone": "313-222-2225"
+  },
+
+  {
+    "id": 6,
+    "firstname": "Amarachi",
+    "lastname": "Jackson",
+    "role": "HR Manager",
+    "email": "ajackson@gmail.com",
+    "phone": "313-222-2226"
+  },
+
+  {
+    "id": 7,
+    "firstname": "Sonia",
+    "lastname": "Nze",
+    "role": "Research Coordinator",
+    "email": "sonia.nze@gmail.com",
+    "phone": "313-222-2227"
+  }
+  
+]
