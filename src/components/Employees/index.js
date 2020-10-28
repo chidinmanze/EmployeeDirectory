@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function Employees(props) {
 
   const { employees } = props;
+  console.log (props, "");
   return (
     <table class="table">
   <thead>

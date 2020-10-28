@@ -10,7 +10,8 @@ function App() {
     <Wrapper>
       <h1>Employee Directory</h1>
     <Employees
-    first name ={employees.firstname}
+    employees ={employees}
+   
     />
 
     </Wrapper>
