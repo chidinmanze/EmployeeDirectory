@@ -10,7 +10,8 @@ function Employees(props) {
     <table class="table">
   <thead>
     <tr>
-      <th scope="col">Employee ID</th> 
+      <th scope="col"><button onClick={() => props.sortBy('id')}>
+      Employee ID </button></th> 
       <th scope="col">First Name</th> 
       <th scope="col">Last Name</th>
       <th scope="col">Role</th>
@@ -21,7 +22,7 @@ function Employees(props) {
   <tbody>
    
   {employees.map(employee => (
-    <tr>
+    <tr key={employee.id}>
       <td>{employee.id}</td> 
       <td>{employee.firstname}</td> 
       <td>{employee.lastname}</td> 
