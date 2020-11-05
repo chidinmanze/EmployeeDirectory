@@ -8,8 +8,10 @@ class App extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      employees: employees
-
+      employees: employees,
+      direction: {
+        id: 'asc'
+      }
     }
 
     this.sortBy = this.sortBy.bind(this)
@@ -17,10 +19,21 @@ class App extends React.Component {
   
   sortBy(key) {
     this.setState ({
-    employees: employees.sort((a, b) => a < b)
-    })
-
+    employees: employees.sort((a, b) => (
+      this.state.direction[key] === 'asc'
+      ? parseFloat(a[key]) - parseFloat(b[key])
+      : parseFloat(b[key]) - parseFloat(a[key])
+        
+  )). 
+  direction: {
+    [key]: this.state.direction[key] === 'asc'
+    ? 'desc'
+    : 'asc'
   }
+
+  })
+
+
 
   render() {
     return (

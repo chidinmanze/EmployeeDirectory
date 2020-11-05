@@ -7,10 +7,10 @@ function Employees(props) {
   const { employees } = props;
   console.log (props, "");
   return (
-    <table class="table">
+    <table className="table">
   <thead>
     <tr>
-      <th scope="col"><button onClick={() => props.sortBy('id')}>
+      <th scope="col"><button onClick={e => props.sortBy(e, 'id')}>
       Employee ID </button></th> 
       <th scope="col">First Name</th> 
       <th scope="col">Last Name</th>
