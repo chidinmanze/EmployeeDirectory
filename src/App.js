@@ -18,22 +18,20 @@ class App extends React.Component {
   }
   
   sortBy(key) {
-    this.setState ({
-    employees: employees.sort((a, b) => (
-      this.state.direction[key] === 'asc'
-      ? parseFloat(a[key]) - parseFloat(b[key])
-      : parseFloat(b[key]) - parseFloat(a[key])
-        
-  )). 
-  direction: {
-    [key]: this.state.direction[key] === 'asc'
-    ? 'desc'
-    : 'asc'
+    this.setState({
+      employees: employees.sort((a, b) => (
+        this.state.direction[key] === 'asc'
+          ? parseFloat(a[key]) - parseFloat(b[key])
+          : parseFloat(b[key]) - parseFloat(a[key])
+
+      )),
+      direction: {
+        [key]: this.state.direction[key] === 'asc'
+          ? 'desc'
+          : 'asc'
+      }
+    })
   }
-
-  })
-
-
 
   render() {
     return (
