@@ -2,10 +2,13 @@ import React from "react";
 import "./style.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-function Employees(props) {
+class Employees extends React.Component {
+constructor(props) {
+super(props);
 
   const { employees } = props;
   console.log (props, "");
+  
   return (
     <table className="table">
   <thead>
@@ -20,7 +23,7 @@ function Employees(props) {
     </tr>
   </thead>
   <tbody>
-   
+    
   {employees.map(employee => (
     <tr key={employee.id}>
       <td>{employee.id}</td> 
@@ -34,6 +37,7 @@ function Employees(props) {
   </tbody>
 </table>
   );
+}
 }
 
 export default Employees;
